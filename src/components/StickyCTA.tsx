@@ -38,7 +38,7 @@ export default function StickyCTA() {
           show ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0",
         )}
       >
-        <div className="border-t border-white/[0.08] bg-ink-950/90 px-3 pt-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))] backdrop-blur-xl">
+        <div className="border-t border-white/8 bg-ink-950/90 px-3 pt-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))] backdrop-blur-xl">
           <div className="grid grid-cols-[1fr_1fr_auto] gap-2">
             <a
               href={waHref}
@@ -60,7 +60,7 @@ export default function StickyCTA() {
             <a
               href={telHref}
               aria-label="Appeler le garage"
-              className="grid w-12 place-items-center rounded-xl border border-white/12 bg-white/[0.05] text-bone active:scale-[0.98]"
+              className="grid w-12 place-items-center rounded-xl border border-white/12 bg-white/5 text-bone active:scale-[0.98]"
             >
               <IconPhone className="h-[18px] w-[18px]" />
             </a>
@@ -79,7 +79,7 @@ export default function StickyCTA() {
         {menuOpen && (
           <div className="mb-3 w-80 overflow-hidden rounded-2xl border border-white/12 bg-ink-900/95 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] backdrop-blur-xl">
             {/* Header */}
-            <div className="border-b border-white/[0.08] bg-gradient-to-r from-[#1f8f4e]/30 via-[#1f8f4e]/15 to-transparent p-4">
+            <div className="border-b border-white/8 bg-linear-to-r from-[#1f8f4e]/30 via-[#1f8f4e]/15 to-transparent p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="relative">
@@ -128,7 +128,7 @@ export default function StickyCTA() {
             </div>
 
             {/* Direct message link */}
-            <div className="border-t border-white/[0.08] bg-black/25 p-2.5">
+            <div className="border-t border-white/8 bg-black/25 p-2.5">
               <a
                 href={waHref}
                 target="_blank"

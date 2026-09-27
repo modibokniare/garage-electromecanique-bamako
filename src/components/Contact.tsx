@@ -51,14 +51,14 @@ function InfoRow({
   return (
     <Wrapper
       {...(href ? { href, ...(external ? { target: "_blank", rel: "noopener noreferrer" } : {}) } : {})}
-      className="group flex items-start gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-4 transition-all duration-300 hover:border-flame-500/35 hover:bg-white/[0.05] sm:p-5"
+      className="group flex items-start gap-4 rounded-2xl border border-white/[0.07] bg-white/2 p-4 transition-all duration-300 hover:border-flame-500/35 hover:bg-white/5 sm:p-5"
     >
       <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-flame-500/25 bg-flame-500/10 text-flame-400 transition-colors duration-300 group-hover:bg-flame-500 group-hover:text-white">
         {icon}
       </span>
       <span className="min-w-0">
         <span className="block font-mono text-[10px] tracking-[0.2em] text-steel uppercase">{label}</span>
-        <span className="mt-1 block text-[15px] font-semibold break-words text-bone">{value}</span>
+        <span className="mt-1 block text-[15px] font-semibold wrap-break-word text-bone">{value}</span>
         {note ? <span className="mt-1 block text-[12px] text-steel">{note}</span> : null}
       </span>
     </Wrapper>
@@ -136,7 +136,7 @@ export default function Contact() {
 
             <div className="mt-9 space-y-3.5">
               <Reveal delay={30}>
-                <div className="group flex items-start gap-4 rounded-2xl border border-flame-500/25 bg-gradient-to-r from-flame-500/10 via-ink-900/60 to-white/[0.02] p-4 sm:p-5">
+                <div className="group flex items-start gap-4 rounded-2xl border border-flame-500/25 bg-linear-to-r from-flame-500/10 via-ink-900/60 to-white/2 p-4 sm:p-5">
                   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-flame-500/35 bg-flame-500/15 font-mono text-sm font-bold text-flame-400">
                     OD
                   </span>
@@ -197,7 +197,7 @@ export default function Contact() {
                   src={mapsEmbed}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="h-64 w-full grayscale-[65%] contrast-[1.1] transition-all duration-700 hover:grayscale-0 sm:h-72"
+                  className="h-64 w-full grayscale-65 contrast-[1.1] transition-all duration-700 hover:grayscale-0 sm:h-72"
                   style={{ border: 0 }}
                   allowFullScreen
                 />
@@ -213,10 +213,10 @@ export default function Contact() {
           <div className="lg:col-span-7">
             <Reveal delay={100}>
               <div className="glass relative overflow-hidden rounded-3xl p-6 shadow-[0_50px_90px_-60px_rgba(0,0,0,1)] sm:p-8 lg:p-10">
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-flame-500/60 to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-flame-500/60 to-transparent" />
 
                 {sent ? (
-                  <div className="flex min-h-[26rem] flex-col items-center justify-center text-center">
+                  <div className="flex min-h-104 flex-col items-center justify-center text-center">
                     <span className="grid h-16 w-16 place-items-center rounded-2xl bg-flame-500/15 text-flame-400">
                       <IconCheck className="h-8 w-8" />
                     </span>
@@ -226,7 +226,7 @@ export default function Contact() {
                         ? "Votre demande a été transmise via WhatsApp. Nous revenons vers vous rapidement."
                         : "Votre demande est prête. Le numéro de contact du garage doit encore être renseigné dans la configuration du site pour permettre l'envoi automatique."}
                     </p>
-                    <div className="mt-5 w-full max-w-md rounded-2xl border border-white/[0.08] bg-ink-950/50 p-5 text-left">
+                    <div className="mt-5 w-full max-w-md rounded-2xl border border-white/8 bg-ink-950/50 p-5 text-left">
                       <p className="font-mono text-[10px] tracking-[0.2em] text-steel uppercase">Récapitulatif</p>
                       <ul className="mt-3 space-y-1.5 text-[13.5px] text-mist">
                         <li>
@@ -268,7 +268,7 @@ export default function Contact() {
                     </p>
 
                     {/* Messages prédéfinis WhatsApp */}
-                    <div className="mt-6 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4 sm:p-5">
+                    <div className="mt-6 rounded-2xl border border-white/8 bg-white/2 p-4 sm:p-5">
                       <div className="flex items-center justify-between gap-3">
                         <div className="flex items-center gap-2">
                           <span className="grid h-6 w-6 place-items-center rounded-lg bg-[#1f8f4e]/20 text-[#3ecf7e]">
@@ -418,7 +418,7 @@ export default function Contact() {
                         {...(waHref.startsWith("http")
                           ? { target: "_blank", rel: "noopener noreferrer" }
                           : {})}
-                        className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/12 bg-white/[0.03] px-6 py-4 text-[13px] font-semibold tracking-wide text-bone uppercase transition-colors hover:border-[#1f8f4e] hover:text-[#3ecf7e] sm:w-auto"
+                        className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/12 bg-white/3 px-6 py-4 text-[13px] font-semibold tracking-wide text-bone uppercase transition-colors hover:border-[#1f8f4e] hover:text-[#3ecf7e] sm:w-auto"
                       >
                         <IconWhatsApp className="h-[18px] w-[18px]" />
                         Écrire à M. DIARRA sur WhatsApp

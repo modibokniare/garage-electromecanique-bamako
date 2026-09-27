@@ -11,7 +11,7 @@ export default function Testimonials() {
   return (
     <section
       id="avis"
-      className="relative scroll-mt-24 overflow-hidden border-y border-white/[0.06] bg-ink-900/40 py-20 sm:py-24 lg:py-32"
+      className="relative scroll-mt-24 overflow-hidden border-y border-white/6 bg-ink-900/40 py-20 sm:py-24 lg:py-32"
     >
       <div className="pointer-events-none absolute top-10 right-0 h-80 w-80 rounded-full bg-flame-700/10 blur-[120px]" />
 
@@ -30,7 +30,7 @@ export default function Testimonials() {
         <div className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6">
           {testimonials.map((t, i) => (
             <Reveal key={t.id} delay={i * 120}>
-              <article className="card-sheen relative flex h-full flex-col rounded-2xl border border-white/[0.08] bg-ink-850/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-flame-500/35 hover:shadow-[0_20px_50px_-25px_rgba(255,75,22,0.4)] sm:p-7">
+              <article className="card-sheen relative flex h-full flex-col rounded-2xl border border-white/8 bg-ink-850/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-flame-500/35 hover:shadow-[0_20px_50px_-25px_rgba(255,75,22,0.4)] sm:p-7">
                 {/* Header: Stars & Service Badge */}
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-1 text-flame-400">
@@ -38,7 +38,7 @@ export default function Testimonials() {
                       <IconStar key={s} className="h-4 w-4" />
                     ))}
                   </div>
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 font-mono text-[9px] tracking-[0.15em] text-steel uppercase">
+                  <span className="rounded-full border border-white/10 bg-white/4 px-2.5 py-1 font-mono text-[9px] tracking-[0.15em] text-steel uppercase">
                     {t.service}
                   </span>
                 </div>
@@ -77,7 +77,7 @@ export default function Testimonials() {
         </div>
 
         <Reveal delay={150}>
-          <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.025] p-6 text-center sm:flex-row sm:justify-between sm:text-left">
+          <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-4 rounded-2xl border border-white/[0.07] bg-white/2.5 p-6 text-center sm:flex-row sm:justify-between sm:text-left">
             <div>
               <p className="text-sm font-semibold text-bone">
                 Vous avez confié votre voiture à M. Oumar Karamoko DIARRA ?

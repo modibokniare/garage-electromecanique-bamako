@@ -21,7 +21,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/[0.07] bg-ink-950">
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-72 w-[46rem] -translate-x-1/2 rounded-full bg-flame-700/10 blur-[130px]" />
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-72 w-184 -translate-x-1/2 rounded-full bg-flame-700/10 blur-[130px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-28 sm:px-6 lg:px-10 lg:pt-20 lg:pb-12">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
@@ -41,7 +41,7 @@ export default function Footer() {
                   href="#contact"
                   aria-label={`${s.label} — lien à renseigner`}
                   title={`${s.label} : lien à renseigner`}
-                  className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/[0.03] text-mist transition-all duration-300 hover:-translate-y-0.5 hover:border-flame-500/50 hover:text-flame-400"
+                  className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/3 text-mist transition-all duration-300 hover:-translate-y-0.5 hover:border-flame-500/50 hover:text-flame-400"
                 >
                   <s.icon className="h-[18px] w-[18px]" />
                 </a>

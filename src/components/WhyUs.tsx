@@ -5,7 +5,7 @@ import { CTAButton, Eyebrow } from "./ui";
 
 export default function WhyUs() {
   return (
-    <section id="apropos" className="relative scroll-mt-24 overflow-hidden border-y border-white/[0.06] bg-ink-900/40 py-20 sm:py-24 lg:py-32">
+    <section id="apropos" className="relative scroll-mt-24 overflow-hidden border-y border-white/6 bg-ink-900/40 py-20 sm:py-24 lg:py-32">
       <div className="grid-lines radial-fade pointer-events-none absolute inset-0 opacity-30" />
 
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-10">
@@ -20,7 +20,7 @@ export default function WhyUs() {
                 decoding="async"
                 className="aspect-4/5 w-full object-cover sm:aspect-3/2 lg:aspect-4/5"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-ink-950 via-ink-950/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-ink-950/70 px-3.5 py-1.5 backdrop-blur-md">
                   <IconPin className="h-3.5 w-3.5 text-flame-400" />
@@ -66,7 +66,7 @@ export default function WhyUs() {
           <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
             {whyUs.map((w, i) => (
               <Reveal key={w.title} delay={i * 70}>
-                <div className="group flex gap-3.5 rounded-xl border border-transparent p-3 transition-colors duration-300 hover:border-white/[0.08] hover:bg-white/[0.03]">
+                <div className="group flex gap-3.5 rounded-xl border border-transparent p-3 transition-colors duration-300 hover:border-white/8 hover:bg-white/3">
                   <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-flame-500/12 text-flame-400 transition-colors duration-300 group-hover:bg-flame-500 group-hover:text-white">
                     <IconCheck className="h-3.5 w-3.5" />
                   </span>
