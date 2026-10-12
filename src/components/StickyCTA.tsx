@@ -90,7 +90,7 @@ export default function StickyCTA() {
                   </div>
                   <div>
                     <p className="text-[13px] font-bold text-bone">{brand.owner}</p>
-                    <p className="text-[11px] text-steel">Garage Électromécanique</p>
+                    <p className="text-[11px] text-steel">Garage Automobile Moussa-Oumou</p>
                   </div>
                 </div>
                 <button

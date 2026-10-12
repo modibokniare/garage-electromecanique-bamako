@@ -123,7 +123,7 @@ export default function Footer() {
 
         <div className="mt-7 flex flex-col gap-3 border-t border-white/[0.07] pt-7 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[10.5px] tracking-[0.14em] text-steel uppercase">
-            © {new Date().getFullYear()} {brand.name} — {brand.city}
+            © {new Date().getFullYear()} {brand.name} {brand.nameLine2} — {brand.city}
           </p>
           <p className="font-mono text-[10px] tracking-[0.14em] text-steel/70 uppercase">{brand.legalNote}</p>
         </div>

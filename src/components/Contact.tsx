@@ -94,7 +94,7 @@ export default function Contact() {
     setError(null);
 
     const text = [
-      "Demande de rendez-vous — Garage Électromécanique Djelibougou",
+      "Demande de rendez-vous — Garage Automobile Moussa-Oumou",
       `À l'attention de M. Oumar Karamoko DIARRA`,
       "",
       `Nom : ${form.nom}`,

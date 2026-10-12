@@ -1,6 +1,6 @@
-# Garage Électromécanique — Djelibougou, Bamako
+# Garage Automobile Moussa-Oumou — Djelibougou, Bamako
 
-Site web vitrine officiel du **Garage Électromécanique** situé à Djelibougou (Bamako, Mali), sous la direction de **M. Oumar Karamoko DIARRA**.
+Site web vitrine officiel du **Garage Automobile Moussa-Oumou** situé à Djelibougou (Bamako, Mali), sous la direction de **M. Oumar Karamoko DIARRA**.
 
 ## 🚗 À propos
 

@@ -1,4 +1,4 @@
-import heroImg from "../../public/images/hero-garage.jpg";
+import heroImg from "../../public/images/ai-hero.jpg";
 import { telHref, waHref } from "@/data/site";
 import { IconArrow, IconPhone, IconPin, IconWhatsApp } from "./Icons";
 import { CTAButton } from "./ui";
@@ -12,17 +12,17 @@ export default function Hero() {
       <div className="absolute inset-0 -z-20">
         <img
           src={heroImg}
-          alt="Mécanicien réalisant un diagnostic électronique sur un véhicule dans l'atelier du garage à Djelibougou, Bamako"
-          className="h-full w-full object-cover object-center"
+          alt="Mécanicien penché sur le moteur d'un véhicule dans l'atelier du garage à Djelibougou, Bamako"
+          className="h-full w-full object-cover object-[50%_22%]"
           fetchPriority="high"
           decoding="async"
         />
       </div>
 
       {/* Overlays */}
-      <div className="absolute inset-0 -z-10 bg-ink-950/72" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/80 to-transparent" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950 via-ink-950/25 to-ink-950/70" />
+      <div className="absolute inset-0 -z-10 bg-ink-950/25" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/75 to-transparent" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950 via-transparent to-ink-950/45" />
       <div className="grid-lines radial-fade absolute inset-0 -z-10 opacity-40" />
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="animate-scan absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-transparent via-flame-500/[0.07] to-transparent" />

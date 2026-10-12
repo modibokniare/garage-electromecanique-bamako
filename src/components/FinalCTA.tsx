@@ -1,4 +1,4 @@
-import ctaImg from "../../public/images/cta-car.jpg";
+import ctaImg from "../../public/images/real-sign.jpg";
 import { waHref } from "@/data/site";
 import { IconArrow, IconWhatsApp } from "./Icons";
 import Reveal from "./Reveal";
@@ -10,7 +10,7 @@ export default function FinalCTA() {
       <div className="absolute inset-0 -z-20">
         <img
           src={ctaImg}
-          alt="Véhicule moderne dans un atelier automobile sombre"
+          alt="Enseigne du garage à Djelibougou"
           loading="lazy"
           decoding="async"
           className="h-full w-full object-cover object-center"

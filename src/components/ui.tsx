@@ -113,7 +113,7 @@ export function Logo({ className, compact = false }: { className?: string; compa
       </span>
       <span className="leading-none">
         <span className="block font-display text-[11.5px] font-extrabold tracking-[0.12em] text-bone sm:text-[13px]">
-          GARAGE ÉLECTROMÉCANIQUE
+          GARAGE MOUSSA-OUMOU
         </span>
         <span className="mt-1.5 block font-mono text-[9px] tracking-[0.24em] text-steel uppercase sm:text-[10px]">
           {compact ? "Djelibougou" : "Djelibougou · Bamako · Mali"}

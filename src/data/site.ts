@@ -12,25 +12,34 @@
  *  n'est utilisée sur ce site.
  * ------------------------------------------------------------------ */
 
-import diagMechanicImg from "../../public/images/diag-mechanic.jpg";
-import liftMechanicImg from "../../public/images/lift-mechanic.jpg";
-import engineMechanicImg from "../../public/images/engine-mechanic.jpg";
-import diagTabletImg from "../../public/images/diag-tablet.jpg";
-import batteryHandsImg from "../../public/images/battery-hands.jpg";
-import acMechanicImg from "../../public/images/ac-mechanic.jpg";
-import teamMechanicsImg from "../../public/images/team-mechanics.jpg";
+// Vraies photos du garage (source : public/data, recadrées et améliorées)
+import diagnosticImg from "../../public/images/ai-diagnostic.jpg";
+import electricityImg from "../../public/images/ai-electricity.jpg";
+import mechanicImg from "../../public/images/real-mechanic.jpg";
+import climImg from "../../public/images/ai-clim.jpg";
+import engineImg from "../../public/images/real-engine.jpg";
+import maintenanceImg from "../../public/images/real-maintenance.jpg";
+import aboutImg from "../../public/images/real-about.jpg";
+import aboutSmallImg from "../../public/images/real-about-small.jpg";
+import signImg from "../../public/images/real-sign.jpg";
+import servicesSignImg from "../../public/images/real-services-sign.jpg";
+import galEngineImg from "../../public/images/real-gal-engine.jpg";
+import galPradoImg from "../../public/images/real-gal-prado.jpg";
+import galDiagImg from "../../public/images/real-gal-diag.jpg";
+import galWorkImg from "../../public/images/real-gal-work.jpg";
 
+// Illustration avant/après (pas de vraies photos avant/après disponibles) — à remplacer par des photos du garage
 const px = (id: number, w: number, h: number) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
 
 export const TO_FILL = "À RENSEIGNER";
 
 export const brand = {
-  name: "GARAGE ÉLECTROMÉCANIQUE",
-  nameLine2: "DJELIBOUGOU",
+  name: "GARAGE AUTOMOBILE",
+  nameLine2: "MOUSSA-OUMOU",
   owner: "Oumar Karamoko DIARRA",
   ownerRole: "Propriétaire & Responsable d'Atelier",
-  legalNote: "Garage Électromécanique — Propriétaire : Oumar Karamoko DIARRA (Djelibougou, Bamako)",
+  legalNote: "Garage Automobile Moussa-Oumou — Propriétaire : Oumar Karamoko DIARRA (Djelibougou, Bamako)",
   city: "Djelibougou, Bamako — Mali",
 };
 
@@ -123,30 +132,26 @@ export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encod
 )}`;
 
 export const images = {
-  diagnostic: diagMechanicImg,
-  diagnosticTool: diagTabletImg,
-  engineDiag: engineMechanicImg,
-  battery: batteryHandsImg,
-  batteryHands: batteryHandsImg,
-  liftInspect: liftMechanicImg,
-  liftWhite: liftMechanicImg,
-  garageInterior: px(33814732, 1400, 950),
-  garageLift: liftMechanicImg,
-  engineBay: px(16040182, 1200, 900),
-  engineOpenHood: engineMechanicImg,
-  mechanicEngine: engineMechanicImg,
-  mechanicHands: diagTabletImg,
-  oilChange: px(13065697, 1200, 900),
-  oilCheck: px(36281957, 1200, 900),
-  tools: px(8985913, 900, 1200),
-  wrenches: px(7019374, 1200, 900),
+  diagnostic: diagnosticImg,
+  diagnosticTool: aboutSmallImg,
+  engineDiag: engineImg,
+  battery: electricityImg,
+  batteryHands: electricityImg,
+  liftInspect: mechanicImg,
+  garageLift: aboutImg,
+  mechanicEngine: engineImg,
+  mechanicHands: mechanicImg,
+  oilCheck: maintenanceImg,
+  dashboard: diagnosticImg,
+  acVent: climImg,
+  sign: signImg,
+  servicesSign: servicesSignImg,
+  galEngine: galEngineImg,
+  galPrado: galPradoImg,
+  galDiag: galDiagImg,
+  galWork: galWorkImg,
   brakeOld: px(8651900, 1000, 1000),
   brakeNew: px(4294075, 1000, 1000),
-  dashboard: px(4227723, 1200, 900),
-  acVent: acMechanicImg,
-  twoMechanics: teamMechanicsImg,
-  tyre: px(33262773, 1200, 900),
-  redCarLift: liftMechanicImg,
 };
 
 export type Service = {
@@ -303,13 +308,13 @@ export const cases = [
   },
 ];
 
-export const gallery = [
-  { src: images.garageInterior, alt: "Atelier du garage électromécanique à Djelibougou, Bamako", label: "L'atelier" },
-  { src: images.mechanicEngine, alt: "Mécanicien au travail sur un moteur automobile", label: "Mécanicien au travail" },
-  { src: images.diagnosticTool, alt: "Diagnostic électronique automobile avec valise de diagnostic", label: "Diagnostic électronique" },
-  { src: images.twoMechanics, alt: "Équipe de mécaniciens au travail au garage", label: "Travail d'équipe" },
-  { src: images.tools, alt: "Outils professionnels de garage automobile", label: "Outils professionnels" },
-  { src: images.liftInspect, alt: "Véhicule en réparation sur pont élévateur", label: "Véhicules en réparation" },
+export const gallery: { src: string; alt: string; label: string; position?: string; fit?: "cover" | "contain" }[] = [
+  { src: images.galEngine, alt: "M. Diarra, mécanicien, penché sur le moteur d'un véhicule à Djelibougou", label: "Au cœur du moteur", position: "50% 30%" },
+  { src: images.sign, alt: "Enseigne du garage : Garage Automobile Moussa-Oumou, chez Oumar Karamoko DIARRA, mécatronicien", label: "L'enseigne du garage", position: "50% 50%", fit: "contain" },
+  { src: images.galPrado, alt: "Mécanicien au travail sous le capot d'un véhicule, à l'ombre dans la cour de l'atelier", label: "Entretien sur place", position: "50% 40%" },
+  { src: images.servicesSign, alt: "Panneau des services du garage : entretien, vidange, diagnostic, déplacement possible", label: "Nos services", position: "50% 50%", fit: "contain" },
+  { src: images.galDiag, alt: "Diagnostic moteur sur un Toyota RAV4 au garage", label: "Diagnostic moteur", position: "50% 45%" },
+  { src: images.galWork, alt: "Mécanicien intervenant sur un véhicule dans la cour de l'atelier", label: "Mécanique générale", position: "50% 40%" },
 ];
 
 export type Testimonial = {

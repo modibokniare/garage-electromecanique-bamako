@@ -77,7 +77,7 @@ export default function Header() {
               </span>
               <div className="leading-tight">
                 <span className="block font-display text-[12px] sm:text-[13px] font-extrabold tracking-[0.08em] text-bone transition-colors group-hover:text-white">
-                  GARAGE ÉLECTROMÉCANIQUE
+                  GARAGE MOUSSA-OUMOU
                 </span>
                 <span className="block font-mono text-[9px] sm:text-[9.5px] tracking-[0.22em] text-flame-400 uppercase">
                   Djelibougou · Bamako
@@ -201,7 +201,7 @@ export default function Header() {
               </span>
               <div>
                 <span className="block font-display text-[12px] font-extrabold text-bone">
-                  GARAGE ÉLECTROMÉCANIQUE
+                  GARAGE MOUSSA-OUMOU
                 </span>
                 <span className="block font-mono text-[9px] tracking-widest text-flame-400 uppercase">
                   Djelibougou

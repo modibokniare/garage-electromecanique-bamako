@@ -43,7 +43,7 @@ export default function Services() {
                       alt={`${s.title} — garage électromécanique à Djelibougou, Bamako`}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full scale-105 object-cover opacity-70 grayscale-[35%] transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"
+                      className="h-full w-full scale-105 object-cover object-[50%_22%] opacity-70 grayscale-[35%] transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink-850 via-ink-850/50 to-transparent" />
                     <span className="absolute top-4 left-4 grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-ink-950/70 text-flame-400 backdrop-blur-md transition-all duration-500 group-hover:border-flame-500/50 group-hover:bg-flame-500 group-hover:text-white">

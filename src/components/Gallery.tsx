@@ -55,7 +55,11 @@ export default function Gallery() {
                   alt={g.alt}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover grayscale-[45%] transition-all duration-[900ms] ease-out group-hover:scale-[1.07] group-hover:grayscale-0"
+                  style={g.position ? { objectPosition: g.position } : undefined}
+                  className={cn(
+                    "absolute inset-0 h-full w-full grayscale-[45%] transition-all duration-[900ms] ease-out group-hover:scale-[1.07] group-hover:grayscale-0",
+                    g.fit === "contain" ? "bg-ink-900 object-contain" : "object-cover",
+                  )}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/15 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-70" />
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
