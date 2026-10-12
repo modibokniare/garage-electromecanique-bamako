@@ -7,7 +7,7 @@ const pills = ["Électromécanique", "Diagnostic", "Entretien", "Réparation"];
 
 export default function Hero() {
   return (
-    <section id="accueil" className="relative isolate flex min-h-[100svh] items-end overflow-hidden pt-24 pb-14 sm:pb-16 lg:items-center lg:pt-28 lg:pb-28">
+    <section id="accueil" className="relative isolate flex min-h-svh items-end overflow-hidden pt-24 pb-14 sm:pb-16 lg:items-center lg:pt-28 lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 -z-20">
         <img
@@ -21,18 +21,18 @@ export default function Hero() {
 
       {/* Overlays */}
       <div className="absolute inset-0 -z-10 bg-ink-950/25" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/75 to-transparent" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950 via-transparent to-ink-950/45" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-ink-950 via-ink-950/75 to-transparent" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-t from-ink-950 via-transparent to-ink-950/45" />
       <div className="grid-lines radial-fade absolute inset-0 -z-10 opacity-40" />
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="animate-scan absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-transparent via-flame-500/[0.07] to-transparent" />
+        <div className="animate-scan absolute inset-x-0 top-0 h-32 bg-linear-to-b from-transparent via-flame-500/[0.07] to-transparent" />
       </div>
-      <div className="pointer-events-none absolute -top-40 -left-32 -z-10 h-[30rem] w-[30rem] rounded-full bg-flame-600/20 blur-[120px]" />
+      <div className="pointer-events-none absolute -top-40 -left-32 -z-10 h-120 w-120 rounded-full bg-flame-600/20 blur-[120px]" />
 
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="max-w-3xl">
           {/* Location badge */}
-          <div className="reveal is-visible inline-flex items-center gap-2.5 rounded-full border border-white/12 bg-white/[0.05] py-1.5 pr-4 pl-2 backdrop-blur-md">
+          <div className="reveal is-visible inline-flex items-center gap-2.5 rounded-full border border-white/12 bg-white/5 py-1.5 pr-4 pl-2 backdrop-blur-md">
             <span className="relative grid h-6 w-6 place-items-center">
               <span className="animate-pulse-glow absolute inset-0 rounded-full bg-flame-500/50" />
               <IconPin className="relative h-3.5 w-3.5 text-flame-400" />
@@ -103,7 +103,7 @@ export default function Hero() {
             {[82, 58, 94, 41].map((w, i) => (
               <div key={i} className="h-1.5 overflow-hidden rounded-full bg-white/10">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-flame-600 to-flame-300"
+                  className="h-full rounded-full bg-linear-to-r from-flame-600 to-flame-300"
                   style={{ width: `${w}%` }}
                 />
               </div>

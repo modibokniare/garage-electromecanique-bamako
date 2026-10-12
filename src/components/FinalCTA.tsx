@@ -17,7 +17,7 @@ export default function FinalCTA() {
         />
       </div>
       <div className="absolute inset-0 -z-10 bg-ink-950/80" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950 via-ink-950/60 to-ink-950/85" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-t from-ink-950 via-ink-950/60 to-ink-950/85" />
       <div className="grid-lines radial-fade absolute inset-0 -z-10 opacity-30" />
 
       <div className="mx-auto max-w-7xl px-4 py-24 text-center sm:px-6 sm:py-28 lg:px-10 lg:py-36">

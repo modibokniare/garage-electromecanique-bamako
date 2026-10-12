@@ -10,7 +10,7 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
         className,
       )}
     >
-      <span className="h-px w-7 bg-gradient-to-r from-transparent to-flame-500" />
+      <span className="h-px w-7 bg-linear-to-r from-transparent to-flame-500" />
       {children}
     </span>
   );
@@ -105,7 +105,7 @@ export function SectionHeading({
 export function Logo({ className, compact = false }: { className?: string; compact?: boolean }) {
   return (
     <a href="#accueil" className={cn("group flex items-center gap-3", className)} aria-label="Accueil">
-      <span className="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-flame-500 to-flame-700 shadow-[0_8px_24px_-10px_rgba(255,75,22,0.9)] sm:h-11 sm:w-11">
+      <span className="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-linear-to-br from-flame-500 to-flame-700 shadow-[0_8px_24px_-10px_rgba(255,75,22,0.9)] sm:h-11 sm:w-11">
         <span className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.55),transparent_60%)]" />
         <svg viewBox="0 0 24 24" className="relative h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
           <path d="M13.2 2.5 5 13.2h5.4l-.9 8.3L18 10.6h-5.3l.5-8.1Z" />

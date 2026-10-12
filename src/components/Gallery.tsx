@@ -57,11 +57,11 @@ export default function Gallery() {
                   decoding="async"
                   style={g.position ? { objectPosition: g.position } : undefined}
                   className={cn(
-                    "absolute inset-0 h-full w-full grayscale-[45%] transition-all duration-[900ms] ease-out group-hover:scale-[1.07] group-hover:grayscale-0",
+                    "absolute inset-0 h-full w-full grayscale-45 transition-all duration-900 ease-out group-hover:scale-[1.07] group-hover:grayscale-0",
                     g.fit === "contain" ? "bg-ink-900 object-contain" : "object-cover",
                   )}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/15 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-70" />
+                <div className="absolute inset-0 bg-linear-to-t from-ink-950/85 via-ink-950/15 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-70" />
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
                   <span className="text-left font-mono text-[10px] tracking-[0.2em] text-bone/90 uppercase">
                     {g.label}
@@ -79,7 +79,7 @@ export default function Gallery() {
       {/* Lightbox */}
       {open && index !== null && (
         <div
-          className="fixed inset-0 z-[80] flex items-center justify-center bg-ink-950/95 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-80 flex items-center justify-center bg-ink-950/95 p-4 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-label={gallery[index].label}
@@ -89,7 +89,7 @@ export default function Gallery() {
             type="button"
             aria-label="Fermer"
             onClick={() => setIndex(null)}
-            className="absolute top-5 right-5 grid h-11 w-11 place-items-center rounded-xl border border-white/12 bg-white/[0.05] text-bone transition-colors hover:border-flame-500/60"
+            className="absolute top-5 right-5 grid h-11 w-11 place-items-center rounded-xl border border-white/12 bg-white/5 text-bone transition-colors hover:border-flame-500/60"
           >
             <IconClose className="h-5 w-5" />
           </button>
@@ -109,7 +109,7 @@ export default function Gallery() {
                   type="button"
                   aria-label="Image précédente"
                   onClick={() => setIndex((i) => (i === null ? i : (i - 1 + gallery.length) % gallery.length))}
-                  className="grid h-10 w-10 place-items-center rounded-lg border border-white/12 bg-white/[0.04] text-bone transition-colors hover:border-flame-500/60"
+                  className="grid h-10 w-10 place-items-center rounded-lg border border-white/12 bg-white/4 text-bone transition-colors hover:border-flame-500/60"
                 >
                   <IconArrow className="h-4 w-4 rotate-180" />
                 </button>
@@ -117,7 +117,7 @@ export default function Gallery() {
                   type="button"
                   aria-label="Image suivante"
                   onClick={() => setIndex((i) => (i === null ? i : (i + 1) % gallery.length))}
-                  className="grid h-10 w-10 place-items-center rounded-lg border border-white/12 bg-white/[0.04] text-bone transition-colors hover:border-flame-500/60"
+                  className="grid h-10 w-10 place-items-center rounded-lg border border-white/12 bg-white/4 text-bone transition-colors hover:border-flame-500/60"
                 >
                   <IconArrow className="h-4 w-4" />
                 </button>
